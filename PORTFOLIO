@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zimulan Bai (Ropa) - Media Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#home" class="logo">Ropa Bai</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section / Self-Introduction -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1>Zimulan (Ropa) Bai</h1>
+                    <p class="subtitle">A media professional specializing in <span class="typewriter"></span>.</p>
+                    <!-- TODO: 这里的介绍可以根据你的求职方向微调 -->
+                    <p class="intro">
+                        Driven by a passion for storytelling across journalism, advertising, and digital media. I craft compelling narratives that connect with audiences and drive impact. Currently pursuing a Master's in International Journalism at HKBU.
+                    </p>
+                </div>
+                <div class="hero-image">
+                    <!-- TODO: 替换成你自己的专业头像照片 -->
+                    <img src="images/ropa-bai.jpg" alt="Zimulan Bai's Profile Picture">
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <div class="container">
+                <h2>My Works</h2>
+                <p class="section-subtitle">A collection of projects spanning journalism, brand strategy, digital content, and creative filmmaking.</p>
+                
+                <!-- Filter Buttons (Updated Categories) -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="journalism">Journalism & News</button>
+                    <button class="filter-btn" data-filter="brand">Brand & Advertising</button>
+                    <button class="filter-btn" data-filter="digital">Digital & Social Media</button>
+                    <button class="filter-btn" data-filter="creative">Creative Filmmaking</button>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <div class="portfolio-grid">
+
+                    <!-- Project 1: Journalism (视频) -->
+                    <!-- TODO: 替换为你在Southeast Media的选举报道视频 -->
+                    <a href="https://youtube.com/shorts/TtRvZQPUHjM?si=nYway2CR2Q1dl6X-" target="_blank" class="portfolio-item" data-category="journalism">
+                        <img src="images/东南传媒-3.png" alt="HK Election Coverage">
+                        <div class="overlay">
+                            <h3>LegCo Election Coverage</h3>
+                            <p>Video News | Southeast Media</p>
+                        </div>
+
+                    <a href="https://finder.video.qq.com/251/20302/stodownload?encfilekey=Cvvj5Ix3eewK0tHtibORqcsqchXNh0Gf3sJcaYqC2rQAg7TxSJt4pfkYDsLb5iaxS259mTVkAv569lksngkQLHeNwOhpk9h802yeErowjoajd9pN7c7OfLMwFKjBMqiaeVE&bizid=1023&dotrans=0&hy=SH&idx=1&m=&uzid=7a170&token=cztXnd9GyrE79s06E0mC8qP3icWjwDY2yIGYSuGpdfyLYQLLHjIRa4kbalX2qEOBXCh0dsO0ickBWpoMbeUAvFkwTw4AZFV39L4Wv7u67D9ExRwCict9l3fxt7wGrwQdDE7v1l3HdnBWvdDVH9KJZzLiaxiaxia9oaE4fice0CUicJRvNx4&basedata=CAESABoDeFYwIgAqBwjRMBAAGAA&sign=ibm5-BpJ5ONpjB6hobj8ZFwl7CPz_lcWjJw1_QSBGKZpPCg6zBvcdrK2NJXl3gTHY4UisdwGGwvCUiqYueSr4g&ctsc=150&X-snsvideoflag=xWT157" target="_blank" class="portfolio-item" data-category="journalism">
+                        <img src="images/东南传媒-2.png" alt="Wang Fuk Court fire">
+                        <div class="overlay">
+                            <h3>Pets Rescue in Wang Fuk Court fire</h3>
+                            <p>Video News | Southeast Media</p>
+                        </div>
+
+                    <a href="https://x.com/media_southeast/status/1996883054565249332?s=46" target="_blank" class="portfolio-item" data-category="journalism">
+                        <img src="images/东南传媒-1.png" alt="Wang Fuk Court fire">
+                        <div class="overlay">
+                            <h3>Mourning After Wang Fuk Court fire</h3>
+                            <p>Video News | Southeast Media</p>
+                        </div>
+                    </a>
+
+                    <!-- Project 2: Brand & Advertising (TVC) -->
+                    <!-- TODO: 替换为贵州珍酒的TVC项目 -->
+                    <a href="" target="_blank" class="portfolio-item" data-category="brand">
+                        <img src="images/casebook-1.png" alt="Guizhou Zhenjiu TVC">
+                        <div class="overlay">
+                            <h3>Stella Artois: The Perfect Serve Chalice</h3>
+                            <p>Competitor Analysis | Havas</p>
+                        </div>
+
+                    <a href="" target="_blank" class="portfolio-item" data-category="brand">
+                        <img src="images/casebook-2.png" alt="Guizhou Zhenjiu TVC">
+                        <div class="overlay">
+                            <h3>Heineken: Bar Experience</h3>
+                            <p>Competitor Analysis | Havas</p>
+                        </div>
+
+                    <a href="https://finder.video.qq.com/251/20302/stodownload?encfilekey=Cvvj5Ix3eewK0tHtibORqcsqchXNh0Gf3sJcaYqC2rQAkXmCRvAEj3qkYok3ohD0tgu3lsxmVrHLxicpOnCS53Rnf2sJm9DChTTLbe7QcxcffeIfIqxRugWJp5StGA58jf&bizid=1023&dotrans=0&hy=SH&idx=1&m=&uzid=1&token=cztXnd9GyrE79s06E0mC8uEwHphNGfbnw727RhGYDNf68Vmz4NF3KmduZQWTY56r6ibiaibAiaB5EROUXerKsATC2unjnvicRDbvdH8jwwl7d82l994DaiaHlJg6waf5589JCbtefL8CNqvuW8FU9TLIick2P1WLkfONyVcSL52lsAG2ac&basedata=CAESABoDeFYwIgAqBwjRMBAAGAA&sign=r1auGaKcvemqCVDoHVMPqo8xYSB2Enpma5c2K8xntJuq-7m3uXfj8qdFLQiu5hIyK-Wxuk30EeGMm0AUeAge6A&ctsc=150&X-snsvideoflag=xWT156" target="_blank" class="portfolio-item" data-category="brand">
+                        <img src="images/贵州珍酒-1.png" alt="Guizhou Zhenjiu TVC">
+                        <div class="overlay">
+                            <h3>Guizhou Zhenjiu Lantern Festival TVC</h3>
+                            <p>Campaign Production | Havas</p>
+                        </div>
+
+                    <a href="https://finder.video.qq.com/251/20302/stodownload?encfilekey=Cvvj5Ix3eewK0tHtibORqcsqchXNh0Gf3sJcaYqC2rQDjkol2tGAEffpbL5DnTmNywU9U1TdNS6KicRiaVy42vQXiagkMMUIA2heSrgLTQ7tEIQZ08lavXiaG3fMc0NgxXVMX&bizid=1023&dotrans=0&hy=SH&idx=1&m=&uzid=1&token=cztXnd9GyrE79s06E0mC8vNeib09VwfWz3yMKHmQlviaSnbwYncq0j1bwOKYBgO0uOBVjE3ZFCVCgAUbaA6ibI4eHknPkgQId721nld5PXlsWBdzC9HRNTXJSeItm696oqpW2HibTwsCaWoTMlfQibNgbmibSaRTO2KBOUiaMnn0BIw3vo&basedata=CAESABoDeFYwIgAqBwjRMBAAGAA&sign=QroxdRXukE6GwMfETx_sETpnOnR3ZRbICJgJDzvlvnuYHAEHCEek5EoX-bE0BEvX6i5UBdAlwsiSNl_ZKvjl2A&ctsc=150&X-snsvideoflag=xWT157" target="_blank" class="portfolio-item" data-category="brand">
+                        <img src="images/贵州珍酒-2.png" alt="Guizhou Zhenjiu TVC">
+                        <div class="overlay">
+                            <h3>Guizhou Zhenjiu CNY TVC</h3>
+                            <p>Campaign Production | Havas</p>
+                        </div>
+
+                    </a>
+
+                    <!-- Project 3: Digital & Social Media (图文/案例) -->
+                    <!-- TODO: 替换为抖音帖子案例 -->
+                    <a href="https://v.douyin.com/v0OuDi3jB00/" target="_blank" class="portfolio-item" data-category="digital">
+                        <img src="images/dy-case.jpg" alt="Douyin Case Study">
+                        <div class="overlay">
+                            <h3>Douyin Account Growth</h3>
+                            <p>90k+ Likes Top Post | Guancha Wenyu</p>
+                        </div>
+
+                    <a href="https://v.douyin.com/U4BkWBPoaVA/ l@P.kC" target="_blank" class="portfolio-item" data-category="digital">
+                        <img src="images/dy-2.jpg" alt="Douyin Case Study">
+                        <div class="overlay">
+                            <h3>Vox Pop</h3>
+                            <p>10k+ Likes Top Post | NEED!</p>
+                        </div>
+
+                    <a href="https://www.instagram.com/p/DUAU8nME3-L/?igsh=ZHU2ZjRmeGR6aWRj" target="_blank" class="portfolio-item" data-category="digital">
+                        <img src="images/ig-1.png" alt="Instagram Case Study">
+                        <div class="overlay">
+                            <h3>Instagram Trend Explainer</h3>
+                            <p>Decoding GenZ | Course Assignment</p>
+                        </div>
+                    </a>
+
+                    <!-- Project 4: Creative Filmmaking (剧情片) -->
+                    <!-- TODO: 替换为你的剧情短片《下一站，长春》 -->
+                                        
+<a href="https://www.facebook.com/share/v/1AREMewkis/?" target="_blank" class="portfolio-item" data-category="creative">
+                        <img src="images/notitle.jpg" alt="Narrative Short Film">
+                        <div class="overlay">
+                            <h3>No Ttile</h3>
+                            <p>Documentary Short Film  | Director</p>
+                            <p>5 mins | English</p>
+                        </div>
+
+<a href="https://h5.xinpianchang.com/article/index.html?id=13132224" target="_blank" class="portfolio-item" data-category="creative">
+                        <img src="images/剧情片-1.png" alt="Narrative Short Film">
+                        <div class="overlay">
+                            <h3>Missing Person Notice</h3>
+                            <p>Narrative Short Film | Director</p>
+                            <p>3 mins | Putonghua</p>
+                            <p>National Second Prize</p>
+                        </div>
+
+<a href="https://h5.xinpianchang.com/article/index.html?id=13132217" target="_blank" class="portfolio-item" data-category="creative">
+                        <img src="images/纪录片-1.png" alt="Documentary Short Film">
+                        <div class="overlay">
+                            <h3>GO!</h3>
+                            <p>Documentary Short Film | Director</p>
+                            <p>10 mins | Putonghua</p>
+                        </div>
+                    </a>
+
+
+
+                    <!-- ...你可以按这个格式继续添加更多项目... -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p class="section-subtitle">I'm currently seeking new opportunities. Feel free to reach out!</p>
+                <div class="contact-info">
+                    <!-- TODO: 确认这是你希望公开的邮箱 -->
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:ropa_0620@163.com">ropa_0620@163.com</a></p>
+                </div>
+                <div class="social-links">
+                    <!-- TODO: 替换成你真实有效的社交媒体链接, 比如LinkedIn -->
+                    <a href="https://www.linkedin.com/in/zimulan-bai-9710b33a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank" aria-label="Behance/Vimeo etc."><i class="fab fa-vimeo-v"></i></a>
+                    <a href="docs/Ropa_Bai_CV.pdf" target="_blank" aria-label="Download CV"><i class="fas fa-file-alt"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Zimulan (Ropa) Bai. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- TODO: 别忘了修改 script.js 里的打字机关键词！ -->
+    <script src="script.js"></script>
+</body>
+</html>
+document.addEventListener('DOMContentLoaded', function() {
+
+    // --- 动态打字机效果 ---
+    const typewriterElement = document.querySelector('.typewriter');
+    const words = ["International Journalism", "Brand Strategy", "Digital Storytelling", "Creative Direction"];
+    let wordIndex = 0;
+    let letterIndex = 0;
+    let currentWord = '';
+    let isDeleting = false;
+
+    function type() {
+        const fullWord = words[wordIndex];
+        
+        if (isDeleting) {
+            currentWord = fullWord.substring(0, letterIndex - 1);
+            letterIndex--;
+        } else {
+            currentWord = fullWord.substring(0, letterIndex + 1);
+            letterIndex++;
+        }
+
+        typewriterElement.textContent = currentWord;
+
+        let typeSpeed = isDeleting ? 100 : 200;
+
+        if (!isDeleting && currentWord === fullWord) {
+            typeSpeed = 2000; // 单词显示后的停留时间
+            isDeleting = true;
+        } else if (isDeleting && currentWord === '') {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+            typeSpeed = 500; // 切换单词的间隔
+        }
+
+        setTimeout(type, typeSpeed);
+    }
+
+    type();
+
+
+    // --- 作品集筛选功能 ---
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // 移除所有按钮的 active 类
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // 给当前点击的按钮添加 active 类
+            button.classList.add('active');
+
+            const filter = button.getAttribute('data-filter');
+
+            portfolioItems.forEach(item => {
+                item.style.display = 'none'; // 先隐藏所有项
+                const category = item.getAttribute('data-category');
+                
+                if (filter === 'all' || filter === category) {
+                    item.style.display = 'block'; // 显示匹配的项
+                }
+            });
+        });
+    });
+
+});
+/* --- 全局与变量定义 --- */
+:root {
+    --main-bg-color: #121212;          /* 主背景色-深黑 */
+    --card-bg-color: #1E1E1E;          /* 卡片背景色 */
+    --text-color: #E0E0E0;             /* 主要文字颜色 */
+
+    /* 方案A: 赛博朋克 / 潮酷配色 */
+    --accent-beige: #C8B6FF;           /* 替换为 淡紫色 (用于问候语等) */
+    --accent-blue: #70FFC2;            /* 替换为 薄荷绿 (主要交互色) */
+    --accent-pink: #E4007F;            /* 替换为 亮粉色 (次要强调色) */
+    
+    --font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /* 实现平滑滚动 */
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding-top: 60px; /* 为固定导航栏留出空间 */
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+h1 { font-size: 3.5rem; margin: 0.5rem 0; color: white; }
+h2 { font-size: 2.5rem; text-align: center; margin-bottom: 1rem; color: white; }
+.section-subtitle { text-align: center; max-width: 600px; margin: 0 auto 3rem auto; color: #aaa; }
+
+a {
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover { color: var(--accent-pink); }
+
+/* --- 导航栏 --- */
+.navbar {
+    background-color: rgba(18, 18, 18, 0.85);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav li {
+    margin-left: 25px;
+}
+
+.navbar nav a {
+    color: var(--text-color);
+    font-weight: 300;
+    padding: 5px 0;
+    position: relative;
+}
+
+.navbar nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-blue);
+    transition: width 0.3s ease;
+}
+
+.navbar nav a:hover::after {
+    width: 100%;
+}
+
+/* --- 首页 Hero Section --- */
+.hero {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-text { flex: 1; }
+.greeting { color: var(--accent-beige); font-size: 1.2rem; }
+.subtitle { font-size: 1.5rem; color: #ccc; }
+.intro { max-width: 500px; color: #bbb; }
+
+.typewriter {
+    color: var(--accent-blue);
+    border-right: 2px solid var(--accent-blue);
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--accent-blue); }
+}
+
+.hero-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--card-bg-color);
+    box-shadow: 0 0 25px rgba(168, 218, 220, 0.2);
+}
+
+/* --- 作品集 Section --- */
+#portfolio { padding: 5rem 0; background-color: var(--card-bg-color); }
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid var(--accent-beige);
+    color: var(--accent-beige);
+    padding: 0.6rem 1.2rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background-color: var(--accent-beige);
+    color: var(--main-bg-color);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #333;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.portfolio-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 18, 18, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.portfolio-item:hover .overlay { opacity: 1; }
+.portfolio-item:hover img { transform: scale(1.1); opacity: 0.5; }
+.portfolio-item .overlay h3 { margin: 0 0 0.5rem 0; color: var(--accent-pink); }
+.portfolio-item .overlay p { margin: 0; font-size: 0.9rem; color: #ccc; }
+
+/* --- 联系方式 Section --- */
+#contact { padding: 5rem 0; }
+#contact .container { text-align: center; }
+.contact-info { font-size: 1.2rem; margin: 2rem 0; }
+.contact-info i { color: var(--accent-pink); margin-right: 10px; }
+
+.social-links a {
+    color: var(--text-color);
+    font-size: 1.8rem;
+    margin: 0 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-blue);
+    transform: translateY(-5px);
+}
+
+/* --- 页脚 --- */
+footer {
+    background-color: var(--card-bg-color);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* --- 响应式布局 --- */
+@media (max-width: 768px) {
+    h1 { font-size: 2.8rem; }
+    h2 { font-size: 2rem; }
+
+    .navbar nav { display: none; /* 在移动端可以考虑换成汉堡菜单 */ }
+
+    .hero-content {
+        flex-direction: column-reverse; /* 图片在上，文字在下 */
+        text-align: center;
+    }
+    .hero-text .intro { margin: 1rem auto; }
+    .hero-image img { width: 250px; height: 250px; }
+
+    .filter-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; }
+    .filter-btn { margin: 0.2rem; }
+}
