@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- 动态打字机效果 ---
     const typewriterElement = document.querySelector('.typewriter');
-    const words = ["International Journalism", "Brand Strategy", "Digital Storytelling", "Creative Direction"];
+    const words = ["International Journalism", "Brand Strategy", "Digital Storytelling", "Creative Direction","Investor Relations"];
     let wordIndex = 0;
     let letterIndex = 0;
     let currentWord = '';
